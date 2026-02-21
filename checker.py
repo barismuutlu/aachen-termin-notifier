@@ -93,7 +93,7 @@ def main() -> int:
         has_appointment, cls = check()
     except Exception as e:
         print("[error]", repr(e))
-        # istersen burada Telegram'a hata mesajı da atarız (şimdilik sadece log)
+        #error message
         return 2
 
     current = "APPOINTMENT_POSSIBLE" if has_appointment else "NO_APPOINTMENT"
